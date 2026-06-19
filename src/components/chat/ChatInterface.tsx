@@ -11,23 +11,23 @@ import { Bot, RotateCcw, SidebarOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const WELCOME_LINES = [
-  { type: "h1", text: "👋 Welcome to CodeMentor AI!" },
+  { type: "h1", text: "👋 خوش اومدی به CodeMentor AI!" },
   { type: "gap" },
-  { type: "p", text: "I'm your intelligent programming education assistant. Here's what I can help you with:" },
+  { type: "p", text: "من دستیار هوشمند آموزش برنامه‌نویسی هستم. می‌تونی به فارسی یا انگلیسی باهام صحبت کنی — هر زبانی بنویسی، همون زبانی جواب می‌دم." },
   { type: "gap" },
-  { type: "bold", text: "🛠️ Available Tools:" },
-  { type: "item", text: "📝 Quiz Generator — Test your knowledge on any programming topic" },
-  { type: "item", text: "💻 Code Generator — Get working code examples with explanations" },
-  { type: "item", text: "🔍 GitHub Reviewer — Get professional feedback on your repositories" },
-  { type: "item", text: "🗺️ Learning Roadmap — Get a personalized path to your programming goals" },
+  { type: "bold", text: "🛠️ ابزارهای من:" },
+  { type: "item", text: "📝 کوییز ساز — تست دانش از هر موضوع برنامه‌نویسی" },
+  { type: "item", text: "💻 کد ساز — مثال کد آموزشی با توضیح کامل" },
+  { type: "item", text: "🔍 بررسی GitHub — بازخورد حرفه‌ای روی پروژه‌هات" },
+  { type: "item", text: "🗺️ مسیر یادگیری — برنامه شخصی‌سازی شده برای رسیدن به هدفت" },
   { type: "gap" },
-  { type: "bold", text: "💡 Try these examples:" },
-  { type: "item", text: '"Generate a quiz about React Context API"' },
-  { type: "item", text: '"Generate a FastAPI CRUD example"' },
-  { type: "item", text: '"Review this repository: https://github.com/vercel/next.js"' },
-  { type: "item", text: '"Create a roadmap for becoming a Backend Developer"' },
+  { type: "bold", text: "💡 نمونه سوال‌ها:" },
+  { type: "item", text: "«یه کوییز از React Context API بساز»" },
+  { type: "item", text: "«یه مثال CRUD با FastAPI بنویس»" },
+  { type: "item", text: "«این ریپو رو بررسی کن: https://github.com/vercel/next.js»" },
+  { type: "item", text: "«مسیر یادگیری Backend Developer رو برام بساز»" },
   { type: "gap" },
-  { type: "p", text: "Set your level using the buttons above, then ask me anything! 🚀" },
+  { type: "p", text: "سطح خودت رو از دکمه‌های بالا انتخاب کن، بعد هر سوالی داری بپرس! 🚀" },
 ];
 
 export default function ChatInterface() {

@@ -77,10 +77,13 @@ export async function POST(req: Request) {
 ${levelPrompt}
 
 ## Important Guidelines:
+- ALWAYS detect the language of the user's message and respond in the SAME language
+- If user writes in Persian/Farsi → respond entirely in Persian
+- If user writes in English → respond entirely in English
 - When a tool returns a "prompt" field, use it as your internal instruction to generate the actual response
 - Always generate the actual quiz questions, code examples, or roadmap content — don't just describe what you would do
 - Format your responses with proper markdown for readability
-- End responses with a follow-up question or suggestion when appropriate`;
+- End responses with a follow-up question or suggestion in the same language as the user`;
 
   // Create tools with current student context
   const tools = {
