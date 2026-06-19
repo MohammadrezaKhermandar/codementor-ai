@@ -1,5 +1,7 @@
 import { streamText, generateText } from "ai";
-import { google } from "@ai-sdk/google";
+import { createGroq } from "@ai-sdk/groq";
+
+const groq = createGroq({ apiKey: process.env.GROQ_API_KEY || "" });
 import { createQuizGeneratorTool } from "@/lib/tools/quiz-generator";
 import { createCodeGeneratorTool } from "@/lib/tools/code-generator";
 import { createGitHubReviewTool } from "@/lib/tools/github-review";
@@ -50,7 +52,7 @@ export async function POST(req: Request) {
   if (shouldSummarize(allHistory) && !conversationSummary) {
     try {
       const summaryResult = await generateText({
-        model: google("gemini-2.0-flash"),
+        model: groq("llama-3.3-70b-versatile"),
         prompt: buildSummaryPrompt(allHistory),
         maxTokens: 300,
       });
@@ -97,7 +99,7 @@ ${levelPrompt}
   const recentMessages = messages.slice(-12);
 
   const result = await streamText({
-    model: google("gemini-2.0-flash"),
+    model: groq("llama-3.3-70b-versatile"),
     system: fullSystemPrompt,
     messages: recentMessages,
     tools,
