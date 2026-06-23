@@ -206,24 +206,4 @@ updateContextFromMessage(context, userMessage): AppContext
 | Type Safety | TypeScript + Zod v3 |
 | HTTP Client | Native fetch (GitHub API) |
 
----
 
-## 📊 امتیازبندی پروژه
-
-| بخش | امتیاز |
-|-----|--------|
-| پیاده‌سازی صحیح Agent | 20/20 |
-| Quiz Generator Tool | 10/10 |
-| Code Generator Tool | 10/10 |
-| GitHub Review Tool | 15/15 |
-| Learning Roadmap Tool | 10/10 |
-| Student Level Middleware | 10/10 |
-| Context & Conversation Management | 15/15 |
-| کیفیت کد و ساختار | 5/5 |
-| مستندسازی | 5/5 |
-| رابط کاربری حرفه‌ای (Bonus) | +10 |
-| **جمع** | **110/100** |
-
----
-
-ساخته‌شده با Next.js و Google Gemini AI
